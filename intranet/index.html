@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portal Interno</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+    <!-- MENU LATERAL -->
+    <aside class="sidebar">
+        <div class="logo">
+            <img src="imagens/logo.png" alt="Logo"> <!-- troque depois -->
+        </div>
+
+        <nav class="menu">
+            <button onclick="scrollToSection('home')">Home</button>
+            <button onclick="scrollToSection('ti')">Chamados de TI</button>
+            <button onclick="scrollToSection('rh')">Chamados de RH</button>
+            <button onclick="scrollToSection('conv')">Convênios</button>
+            <button onclick="scrollToSection('NetRIS')">NetRIS</button>
+            <button onclick="scrollToSection('AnimatP')">Animat Pacs</button>
+            <button onclick="scrollToSection('NeoA')">NeoAssist</button>
+        </nav>
+    </aside>
+
+    <!-- ÁREA ROLÁVEL -->
+    <main class="content">
+
+        <!-- HOME -->
+        <section id="home" class="section">
+            <img src="imagens/banner.png" class="banner" alt="Banner da Home">
+            <h2>Ética. Excelência. Dedicação. Acolhimento.</h2>
+        </section>
+
+        <!-- SEÇÃO DE TI -->
+        <section id="ti" class="section block">
+            <h2>LINK PARA OS CHAMADOS DE TI</h2>
+        </section>
+
+        <!-- SEÇÃO DE RH -->
+        <section id="rh" class="section block light">
+            <h2>LINK PARA OS CHAMADOS DE RH</h2>
+        </section>
+
+        <!-- CONVÊNIOS -->
+        <section id="conv" class="section block">
+            <h2>Convênios</h2>
+        </section>
+
+        <!-- NetRIS -->
+        <section id="NetRIS" class="section block">
+            <h2>NetRIS</h2>
+        </section>
+
+        <!-- Animat Pacs -->
+        <section id="AnimatP" class="section block">
+            <h2>Animat Pacs</h2>
+        </section>
+
+        <!-- NeoAssist -->
+        <section id="NeoA" class="section block">
+            <h2>NeoAssist</h2>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+}
+
+/* MENU LATERAL */
+.sidebar {
+    width: 28%; /* Você pode ajustar para ficar igual ao Figma */
+    max-width: 330px;
+    background: #7fa98d;
+    color: white;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.sidebar .logo {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.sidebar .logo img {
+    width: 120px;
+}
+
+.menu button {
+    width: 100%;
+    background: #5e8a77;
+    border: none;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.menu button:hover {
+    background: #4b7162;
+}
+
+/* ÁREA PRINCIPAL */
+.content {
+    margin-left: 330px; /* remove a coluna branca */
+    width: calc(100% - 330px); /* ocupa todo o restante da tela */
+    padding: 40px;
+    overflow-y: scroll;
+}
+
+/* SEÇÕES */
+.section {
+    margin-bottom: 120px;
+    text-align: center;
+}
+
+.banner {
+    width: 100%; /* agora funciona certinho */
+    border-radius: 10px;
+    margin: 0 auto 20px;
+}
+
+.block {
+    background: #9dc9b2;
+    padding: 350px 20px;
+    border-radius: 10px;
+}
+
+.block.light {
+    background: #d7ede1;
+}
